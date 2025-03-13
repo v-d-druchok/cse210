@@ -43,8 +43,6 @@ class Program
                 entry._promptText = prompt;
 
                 journal.AddEntry(entry);
-
-
             }
 
             else if (choice == 2)
