@@ -30,6 +30,7 @@ class Program
             if (choice == 1)
             {
                 Entry entry = new Entry();
+                nuPrompt.SavePrompts();
                 nuPrompt.LoadPrompts();
                 string prompt = nuPrompt.GetRandomPrompt();
 

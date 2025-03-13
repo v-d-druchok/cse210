@@ -1,6 +1,24 @@
 public class PromptGenerator
 {
-    public List<string> _prompts = new List<string>();
+    public List<string> _prompts = new List<string>{
+        "What did you struggle with the most today?",
+        
+        "What did you regret most today?",
+
+        "What was the most interesting thing you did today?",      
+    
+        "What places did you visit today?",        
+    
+        "Who was the person that annoyed you most today?",     
+    
+        "What is something you couldn't do or finish today?",  
+            
+        "How was the weather today?",      
+    
+        "What saddened you the most today?",       
+    
+        "What brought you the most joy today?"
+    };
 
     public string GetRandomPrompt() {
 
