@@ -1,18 +1,19 @@
-public class Custumer 
+public class Customer 
 {
     private string _name;
     private Address _address;
 
-    public bool InUs()
+    public Customer(string name, Address address)
     {
-        if (!_address.Contains("US"))
-        {
-            return false;
-        }
+        _name = name;
+        _address = address;
+    }
 
-        else
-        {
-            return true;
-        }
+    public string GetName() => _name;
+    public Address GetAddress() => _address;
+
+    public bool UsResident()
+    {
+        return _address.InUs();
     }
 }

@@ -5,7 +5,15 @@ public class Address
     private string _state;
     private string _country;
 
-    public bool UsResident()
+    public Address(string street, string city, string state, string country)
+    {
+        _street = street;
+        _city = city;
+        _state = state;
+        _country = country;
+    }
+
+    public bool InUs()
     {
         if (!_country.Contains("US"))
         {
@@ -16,5 +24,10 @@ public class Address
         {
             return true;
         }
+    }
+
+    public string FullAddress()
+    {
+        return $"{_street}, {_city}, {_state}, {_country}";
     }
 }
